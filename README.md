@@ -34,7 +34,7 @@
 - [x] Tocar podcast aleatório
 - [x] Repitir podcast
 - [x] Controlar o tempo do episódio através do slider
-- [ ] Responsividade
+- [x] Responsividade
 - [ ] PWA
 
 ## Demonstração da aplicação
