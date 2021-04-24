@@ -29,10 +29,13 @@
 
 - [x] Tocar o podcast
 - [x] Pausar o podcastr
-- [ ] Pular pro proximo podcast
-- [ ] Pular pro podcast anterior
-- [ ] Tocar podcast aleatório
-- [ ] Repitir podcast
+- [x] Pular pro proximo podcast
+- [x] Pular pro podcast anterior
+- [x] Tocar podcast aleatório
+- [x] Repitir podcast
+- [x] Controlar o tempo do episódio através do slider
+- [ ] Responsividade
+- [ ] PWA
 
 ## Demonstração da aplicação
 
