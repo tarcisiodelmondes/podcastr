@@ -17,3 +17,23 @@
     text-transform: capitalize;
   }
 }
+
+@media (max-width: 720px) {
+  .headerContainer {
+    padding: 2rem 2rem;
+    height: 5rem;
+
+    img {
+      width: 100px;
+    }
+
+    p {
+      font-size: 0.9rem;
+      padding: 0.25rem 0 0.25rem 1rem;
+    }
+
+    span {
+      font-size: 0.9rem;
+    }
+  }
+}

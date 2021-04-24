@@ -2,6 +2,7 @@
   padding: 0 4rem;
   height: calc(100vh - 6.5rem);
   overflow-y: scroll;
+  overflow-x: hidden;
 
   h2 {
     margin-top: 3rem;
@@ -170,6 +171,38 @@
       &:hover {
         filter: brightness(0.95);
       }
+    }
+  }
+}
+
+@media (max-width: 1300px) {
+  .homepage {
+    padding: 0 1.5rem;
+    height: 100vh;
+  }
+
+  .latestEpisodes {
+    ul {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .episodeDetails {
+      a {
+        width: 60%;
+      }
+
+      p {
+        width: 40%;
+      }
+    }
+  }
+
+  .allEpisodes {
+    table {
+      display: block;
+      width: 100%;
+      overflow: scroll;
     }
   }
 }

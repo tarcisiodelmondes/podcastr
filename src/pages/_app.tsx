@@ -4,8 +4,8 @@ import { Header } from '../components/Header';
 import { Player } from '../components/Player';
 
 import styles from '../styles/app.module.scss';
-import { PlayerContext, PlayerContextProvider } from '../context/PlayerContext';
-import { useState } from 'react';
+import { PlayerContextProvider } from '../context/PlayerContext';
+import { OpenPlayer } from '../components/OpenPlayer';
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -13,9 +13,12 @@ function MyApp({ Component, pageProps }) {
       <div className={styles.wrapper}>
         <main>
           <Header />
+          <OpenPlayer />
           <Component {...pageProps} />
         </main>
-        <Player />
+        <div className={styles.isMobile}>
+          <Player />
+        </div>
       </div>
     </PlayerContextProvider>
   );
