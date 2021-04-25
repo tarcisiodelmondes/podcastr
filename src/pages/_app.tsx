@@ -6,20 +6,21 @@ import { Player } from '../components/Player';
 import styles from '../styles/app.module.scss';
 import { PlayerContextProvider } from '../context/PlayerContext';
 import { OpenPlayer } from '../components/OpenPlayer';
+import { OpenPlayerContextProvider } from '../context/OpenPlayer';
 
 function MyApp({ Component, pageProps }) {
   return (
     <PlayerContextProvider>
-      <div className={styles.wrapper}>
-        <main>
-          <Header />
-          <OpenPlayer />
-          <Component {...pageProps} />
-        </main>
-        <div className={styles.isMobile}>
+      <OpenPlayerContextProvider>
+        <div className={styles.wrapper}>
+          <main>
+            <Header />
+            <OpenPlayer />
+            <Component {...pageProps} />
+          </main>
           <Player />
         </div>
-      </div>
+      </OpenPlayerContextProvider>
     </PlayerContextProvider>
   );
 }

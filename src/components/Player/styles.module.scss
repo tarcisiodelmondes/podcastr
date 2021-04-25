@@ -139,3 +139,37 @@
     }
   }
 }
+
+@media (max-width: 1000px) {
+  .playerContainer {
+    display: none;
+  }
+}
+
+.isMobile {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  height: 100vh;
+  width: 100vw;
+
+  z-index: 201;
+
+  padding: 3rem 4rem;
+  background-color: var(--purple-500);
+  color: var(--white);
+
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-between;
+
+  .currentEpisode {
+    img {
+      max-height: 300px;
+    }
+  }
+}

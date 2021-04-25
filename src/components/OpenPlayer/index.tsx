@@ -1,17 +1,13 @@
-import { useState } from 'react';
+import { useContext } from 'react';
 import { AiOutlineClose } from 'react-icons/ai';
+import { OpenPlayerContext } from '../../context/OpenPlayer';
 import { usePlayer } from '../../context/PlayerContext';
-import { Player } from '../Player';
 
 import styles from './styles.module.scss';
 
 export function OpenPlayer() {
-  const [isPlayer, setIsPlayer] = useState(false);
   const { isPlaying } = usePlayer();
-
-  function togglePlayer() {
-    setIsPlayer(!isPlayer);
-  }
+  const { isPlayer, togglePlayer } = useContext(OpenPlayerContext);
 
   return (
     <>
@@ -21,11 +17,8 @@ export function OpenPlayer() {
             <img src="/playing.svg" alt="Ir pro player" />
           </div>
           {isPlayer && (
-            <div className={styles.player}>
-              <Player />
-              <div className={styles.close} onClick={() => togglePlayer()}>
-                <AiOutlineClose color="var(--white)" />
-              </div>
+            <div className={styles.close} onClick={() => togglePlayer()}>
+              <AiOutlineClose color="var(--white)" />
             </div>
           )}
         </div>

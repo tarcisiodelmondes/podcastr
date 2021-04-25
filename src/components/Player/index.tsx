@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { useEffect, useRef, useState } from 'react';
+import { useContext, useEffect, useRef, useState } from 'react';
 import { usePlayer } from '../../context/PlayerContext';
 import styles from './styles.module.scss';
 import Slider from 'rc-slider';
@@ -7,6 +7,7 @@ import Slider from 'rc-slider';
 import 'rc-slider/assets/index.css';
 import { convertDurationToTimeString } from '../../utils/convertDurationToTimeString';
 import Head from 'next/head';
+import { OpenPlayerContext } from '../../context/OpenPlayer';
 
 export function Player() {
   const audioRef = useRef<HTMLAudioElement>(null);
@@ -27,6 +28,7 @@ export function Player() {
     toggleShuffle,
     setPlayingState,
   } = usePlayer();
+  const { isPlayer } = useContext(OpenPlayerContext);
 
   const episode = episodeList[currentEpisodeIndex];
 
@@ -56,7 +58,7 @@ export function Player() {
   const [progress, setProgress] = useState(0);
 
   return (
-    <div className={styles.playerContainer}>
+    <div className={`${styles.playerContainer} ${isPlayer && styles.isMobile}`}>
       <Head>
         <title>Home | Podcast</title>
       </Head>

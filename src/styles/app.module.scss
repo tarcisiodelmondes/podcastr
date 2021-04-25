@@ -6,12 +6,8 @@
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 720px) {
   .wrapper {
     flex-direction: column;
-
-    .isMobile {
-      display: none;
-    }
   }
 }
