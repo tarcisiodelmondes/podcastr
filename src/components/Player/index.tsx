@@ -28,7 +28,7 @@ export function Player() {
     toggleShuffle,
     setPlayingState,
   } = usePlayer();
-  const { isPlayer } = useContext(OpenPlayerContext);
+  const { isPlayer, togglePlayer } = useContext(OpenPlayerContext);
 
   const episode = episodeList[currentEpisodeIndex];
 
@@ -52,7 +52,11 @@ export function Player() {
   }
 
   function handleEpisodeEnded() {
-    hasNext ? playNext() : clearPlayState();
+    if (hasNext) playNext();
+    else {
+      clearPlayState();
+      togglePlayer();
+    }
   }
 
   const [progress, setProgress] = useState(0);
@@ -111,6 +115,7 @@ export function Player() {
             ref={audioRef}
             src={episode.url}
             autoPlay
+            onEnded={() => handleEpisodeEnded()}
             loop={isLooping}
             onPlay={() => setPlayingState(true)}
             onPause={() => setPlayingState(false)}
