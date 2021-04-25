@@ -35,7 +35,7 @@
 - [x] Repitir podcast
 - [x] Controlar o tempo do episódio através do slider
 - [x] Responsividade
-- [ ] PWA
+- [x] PWA
 
 ## Demonstração da aplicação
 
