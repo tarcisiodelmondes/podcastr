@@ -19,7 +19,7 @@ export function OpenPlayer() {
 
           {isPlayer && (
             <div className={styles.close} onClick={() => togglePlayer()}>
-              <AiOutlineClose color="var(--white)" />
+              <AiOutlineClose color="var(--gray-50)" />
             </div>
           )}
         </div>

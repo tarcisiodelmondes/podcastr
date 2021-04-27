@@ -3,6 +3,7 @@
   height: 6.5rem;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: 2rem 4rem;
   border-bottom: 1px solid var(--gray-100);
 
@@ -13,9 +14,21 @@
   }
 
   span {
-    margin-left: auto;
     text-transform: capitalize;
   }
+
+  p,
+  span {
+    color: var(--gray-800);
+  }
+}
+
+.sun {
+  color: var(--gray-800);
+}
+
+.moon {
+  color: var(--gray-800);
 }
 
 @media (max-width: 720px) {

@@ -82,6 +82,11 @@
           }
         }
       }
+
+      p,
+      span {
+        color: var(--gray-800);
+      }
     }
 
     button {
@@ -121,6 +126,7 @@
   td {
     padding: 0.75rem 1rem;
     border-bottom: 1px solid var(--gray-100);
+    color: var(--gray-800);
   }
 
   th {
