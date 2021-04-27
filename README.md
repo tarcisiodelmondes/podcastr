@@ -36,7 +36,7 @@
 - [x] Controlar o tempo do episódio através do slider
 - [x] Responsividade
 - [x] PWA
-- [ ] Tema escuro
+- [x] Tema escuro
 
 ## Demonstração da aplicação
 
