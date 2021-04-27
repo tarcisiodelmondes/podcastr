@@ -36,6 +36,7 @@
 - [x] Controlar o tempo do episódio através do slider
 - [x] Responsividade
 - [x] PWA
+- [ ] Tema escuro
 
 ## Demonstração da aplicação
 
@@ -103,6 +104,6 @@ Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](.github/LICENSE.
 
 ---
 
-<p style="text-align:center">Feito com :heart: por Tarcisio Delmondes</p>
+<p align="center">Feito com :heart: por Tarcisio Delmondes</p>
 
 <br/> :email: &nbsp; Entre em contato comigo: [![Linkedin Badge](https://img.shields.io/badge/-TarcísioDelmondes-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/tarcisio-delmondes-892567207)](https://www.linkedin.com/in/tarcisio-delmondes-892567207)
