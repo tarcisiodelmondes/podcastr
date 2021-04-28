@@ -37,6 +37,7 @@
 - [x] Responsividade
 - [x] PWA
 - [x] Tema escuro
+- [x] Persistir tema no localStorage
 
 ## Demonstração da aplicação
 

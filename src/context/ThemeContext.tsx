@@ -20,6 +20,13 @@ export function ThemeContextProvider({
 }: ThemeContextProviderProps) {
   function changeTheme() {
     theme === 'light' ? setTheme('dark') : setTheme('light');
+
+    JSON.stringify(
+      localStorage.setItem(
+        'podcastr:theme',
+        theme === 'light' ? 'dark' : 'light',
+      ),
+    );
   }
 
   return (

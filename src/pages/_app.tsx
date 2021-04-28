@@ -9,11 +9,15 @@ import { PlayerContextProvider } from '../context/PlayerContext';
 import { OpenPlayer } from '../components/OpenPlayer';
 import { OpenPlayerContextProvider } from '../context/OpenPlayer';
 import Head from 'next/head';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { ThemeContextProvider } from '../context/ThemeContext';
 
 function MyApp({ Component, pageProps }) {
   const [theme, setTheme] = useState('light');
+
+  useEffect(() => {
+    setTheme(localStorage.getItem('podcastr:theme') || 'light');
+  }, []);
 
   return (
     <ThemeContextProvider theme={theme} setTheme={setTheme}>

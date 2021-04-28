@@ -24,14 +24,14 @@ export function Header() {
       <div>
         {theme === 'light' ? (
           <BiMoon
-            className={`${theme === 'light' ? styles.sun : styles.moon}`}
+            className={styles.iconThemeStyle}
             onClick={() => changeTheme()}
             fontSize={30}
             cursor="pointer"
           />
         ) : (
           <BiSun
-            className={`${theme === 'light' ? styles.sun : styles.moon}`}
+            className={styles.iconThemeStyle}
             onClick={() => changeTheme()}
             fontSize={30}
             cursor="pointer"
