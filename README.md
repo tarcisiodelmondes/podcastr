@@ -41,7 +41,7 @@
 
 ## Demonstração da aplicação
 
-Acesse: [podcastr-tarcisiodelmondes.vercel.app](podcastr-tarcisiodelmondes.vercel.app)
+Acesse: [https://podcastr-tarcisiodelmondes.vercel.app](https://podcastr-tarcisiodelmondes.vercel.app)
 
 <a id="pre-requisitos"></a>
 
