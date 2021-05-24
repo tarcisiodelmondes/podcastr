@@ -87,7 +87,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-Podcastr para trazer você ainda mais perto dos melhores podcasts de tecnologia!
+Podcastr é uma aplicação que deixa você ainda mais perto dos melhores podcasts de tecnologia!
 
 Este projeto foi desenvolvido durante a Next Level Week, apresentado por @Rocketseat de 19 a 25 de abril de 2021.
 
